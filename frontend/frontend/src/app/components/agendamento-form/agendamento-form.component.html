@@ -1,0 +1,6 @@
+<form (ngSubmit)="salvar()">
+  <input type="text" [(ngModel)]="agendamento.cliente" name="cliente" placeholder="Nome do cliente" required />
+  <input type="text" [(ngModel)]="agendamento.servico" name="servico" placeholder="Serviço" required />
+  <input type="datetime-local" [(ngModel)]="agendamento.dataHora" name="dataHora" required />
+  <button type="submit">Agendar</button>
+</form>
